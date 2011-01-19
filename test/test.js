@@ -25,7 +25,7 @@ test('setup', 1, function() {
         root: __dirname + '/fixtures'    
     };
     
-    setup('app', app, options);
+    setup(app, options);
     
     handler(req, res);
 });
