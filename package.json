@@ -13,7 +13,9 @@
     "engines": { "node": ">= 0.3.0" },
     "dependencies":  {
         "express": ">= 1.0.0",
-        "jqtpl": ">= 0.0.5"    
+        "jqtpl": ">= 0.0.5",
+        "linter": ">= 0.0.2",
+        "qunit": ">= 0.1.3"
     },
     "licenses": [
         { 
