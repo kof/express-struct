@@ -11,7 +11,7 @@
 The default route is /mymodule/controllers/mycontroller->myaction, where controller and action are optional.
 The default value for controller name is module name and default for action  is controller name.
 This design descision is prefered to 'index' for all defaults, because otherwise you end in hundreds of index files
-and this is not ease then to search for one specific index file.
+and this is not easy then to find one specific index file.
 
 ### res.render
 
