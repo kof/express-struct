@@ -5,3 +5,7 @@ exports.myaction = function(req, res) {
 exports.getview = function(req, res) {
     res.render();
 };
+
+exports.partial = function(req, res) {
+    res.send(res.partial('partial'));
+};

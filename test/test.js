@@ -48,3 +48,10 @@ test('default view', 1, function() {
     });
 });
 
+test('partial view', 1, function() {
+    stop();
+    request('/mymodule/mycontroller/partial', function(data) {
+        equal(data, 'I am partial', 'partial view rendered');
+        start();
+    });
+});
