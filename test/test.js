@@ -55,3 +55,19 @@ test('partial view', 1, function() {
         start();
     });
 });
+
+test('view with partial view using ${partial()}', 1, function() {
+    stop();
+    request('/mymodule/mycontroller/viewwithpartial', function(data) {
+        equal(data, 'I am view - I am partial', 'view with partial inside, using express method');
+        start();
+    });
+});
+
+test('view with partial, using {{tmpl}}', 1, function() {
+    stop();
+    request('/mymodule/mycontroller/viewwithpartial', function(data) {
+        equal(data, 'I am view - I am partial', 'view with partial inside, using express method');
+        start();
+    });
+});
