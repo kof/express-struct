@@ -3,6 +3,7 @@
 ## Features
 - auto routing using modules/controllers/action pattern
 - extended res.render behaviour
+- socket.io integration
 
 ## Usage
 
