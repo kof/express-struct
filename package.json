@@ -13,10 +13,12 @@
     "engines": { "node": ">= 0.3.7" },
     "dependencies":  {
         "express": ">= 1.0.0",
-        "socket.io": ">= 0.6.9",
-        "jqtpl": ">= 0.0.5",
-        "linter": ">= 0.0.2",
-        "qunit": ">= 0.1.3"
+        "socket.io": ">= 0.6.9"
+    },
+    "devDependencies": {
+        "qunit": ">= 0.1.5",
+        "jqtpl": ">= 0.1.0",
+        "linter": ">= 0.0.7"
     },
     "licenses": [
         { 
