@@ -7,7 +7,7 @@ exports.getview = function(req, res) {
 };
 
 exports.partial = function(req, res) {
-    res.send(res.partial('partial'));
+    res.partial('partial');
 };
 
 exports.viewwithpartial = function(req, res) {

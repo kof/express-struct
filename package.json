@@ -1,7 +1,7 @@
  {
     "name": "mvc",
     "description": "MVC is an additional frameowork layer based on express for larger sites.",
-    "version": "0.0.2",
+    "version": "0.0.4",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
     "repository": {
         "type": "git",
@@ -10,8 +10,8 @@
     "keywords": [ "framework", "mvc", "express", "connect" ],
     "engines": { "node": ">= 0.3.7" },
     "dependencies":  {
-        "express": ">= 1.0.0",
-        "socket.io": ">= 0.6.9"
+        "express": ">= 2.1.0",
+        "socket.io": ">= 0.6.16"
     },
     "devDependencies": {
         "jqtpl": ">= 0.1.0"
