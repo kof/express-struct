@@ -1,7 +1,7 @@
  {
     "name": "mvc",
     "description": "MVC is an additional frameowork layer based on express for larger sites.",
-    "version": "0.0.7",
+    "version": "0.0.8",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
     "repository": {
         "type": "git",
