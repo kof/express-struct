@@ -2,8 +2,6 @@
 
 ## Features
 - auto routing using modules/controllers/action pattern
-- extended res.render behaviour
-- socket.io integration
 
 ## Usage
 
@@ -17,4 +15,4 @@ and this is not easy then to find one specific index file.
 ### res.render
 
 The only difference to express here is that the first param, view path, is optional.
-The default view is always /mymodule/views/mycontroller/myaction.html. 
+The default view is always /mymodule/views/mycontroller/myaction.html.
