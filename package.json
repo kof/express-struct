@@ -1,20 +1,23 @@
  {
     "name": "mvc",
     "description": "MVC is an additional frameowork layer based on express for larger sites.",
-    "version": "0.1.0",
+    "version": "0.2.0",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
     "repository": {
         "type": "git",
         "url": "http://github.com/kof/node-mvc.git"
     },
     "keywords": [ "framework", "mvc", "express", "connect" ],
-    "engines": { "node": ">= 0.4.7" },
+    "engines": { "node": "0.6.x" },
     "dependencies":  {
-        "underscore": ">= 1.1.7",
-        "express": ">= 2.1.0"
+        "underscore": "1.3.x",
+        "express": "2.x.x",
+        "findit": "0.1.x"
     },
     "devDependencies": {
-        "jqtpl": ">= 0.1.0"
+        "jqtpl": "1.x.x",
+        "qunit": "0.5.x",
+        "request": "2.9.x"
     },
     "licenses": [
         {

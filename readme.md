@@ -1,4 +1,6 @@
-## MVC is an additional frameowork layer based on express for larger sites.
+## MVC is an additional frameowork layer based on express.
+
+It defines a strict routes structure for you.
 
 ## Features
 - auto routing using modules/controllers/action pattern

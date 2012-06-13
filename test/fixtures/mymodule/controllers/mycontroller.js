@@ -17,3 +17,7 @@ exports.viewwithpartial = function(req, res) {
 exports.viewwithpartial2 = function(req, res) {
     res.render();
 };
+
+exports.brokenaction = function() {
+    throw new Error('I am broken');
+};

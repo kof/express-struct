@@ -1,7 +1,4 @@
 test:
-	qunit -c ./lib/mvc.js -t ./test/test.js --cov false
-
-lint:
-	linter -f ./lib
+	node node_modules/qunit/bin/cli -c ./lib/mvc.js -t ./test/test.js
 
 .PHONY: test lint
