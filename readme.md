@@ -52,10 +52,22 @@ Default module is defined in options.
 Default controller is module name.
 Default action is controller name.
 
-/mymodule -> '/mvc/mymodule/controllers/mymodule:mymodule'
+'/mymodule' -> '/mvc/mymodule/controllers/mymodule:mymodule'
 
-/mymodule/mycontroller -> '/mvc/mymodule/controllers/mycontroller:mycontroller'
+'/mymodule/mycontroller' -> '/mvc/mymodule/controllers/mycontroller:mycontroller'
 
-/mymodule/mycontroller/myaction -> '/mvc/mymodule/controllers/mycontroller:myaction'
+'/mymodule/mycontroller/myaction' -> '/mvc/mymodule/controllers/mycontroller:myaction'
+
+## CRUD support
+
+Define `exports.CRUD = true;` in your controller to support http methods to CRUD mapping for actions.
+
+get: '/mymodule/mycontroller' -> '/mvc/mymodule/controllers/mycontroller:read'
+
+post: '/mymodule/mycontroller' -> '/mvc/mymodule/controllers/mycontroller:create'
+
+put: '/mymodule/mycontroller' -> '/mvc/mymodule/controllers/mycontroller:udpate'
+
+delete: '/mymodule/mycontroller' -> '/mvc/mymodule/controllers/mycontroller:delete'
 
 
