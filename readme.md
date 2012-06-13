@@ -1,7 +1,6 @@
 ## MVC project structure on top of express.
 
-It defines a strict dirs structure for you and mapps automatically the routs.
-
+It defines a strict directories structure for you and maps automatically the routes.
 
 ## Features
 - auto routing using "modules/controllers/action" pattern
