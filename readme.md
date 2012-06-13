@@ -8,16 +8,18 @@ It defines a strict directories structure for you and maps automatically the rou
 
 ## Structure
 
-- mvc
-  - {mymodule}
-    - controllers
-      - {mycontroller}.js
-    - views
-      - {mycontroller}
-        - {myview.html}
-      - layout.html
-    - models
-    - helpers
+mvc
+    {mymodule}
+        controllers
+            {mycontroller}.js
+        views
+            {mycontroller}
+                {myview.html}
+            layout.html
+        models
+        helpers
+        tests
+    {mymodule1}
 
 ## Setup
 
