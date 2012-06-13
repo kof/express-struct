@@ -53,7 +53,9 @@ Default controller is module name.
 Default action is controller name.
 
 /mymodule -> '/mvc/mymodule/controllers/mymodule:mymodule'
+
 /mymodule/mycontroller -> '/mvc/mymodule/controllers/mycontroller:mycontroller'
+
 /mymodule/mycontroller/myaction -> '/mvc/mymodule/controllers/mycontroller:myaction'
 
 
