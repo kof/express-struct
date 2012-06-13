@@ -3,8 +3,10 @@
 It defines a strict directories structure for you and maps automatically the routes.
 
 ## Features
+- dirs structure
 - auto routing using "modules/controllers/action" pattern
 - res.render knows its default template name
+- CRUD
 
 ## Structure
 
@@ -30,6 +32,13 @@ It defines a strict directories structure for you and maps automatically the rou
 
     struct.setup(server, options);
     server.listen(8888);
+
+    // /mvc/mymodule/controllers/mycontroller.js
+    exports.myaction = function(req, res, next) {
+        // will render /mvc/mymodule/views/mycontroller/myaction.html
+        res.render();
+    };
+
 
 ## Options
 
