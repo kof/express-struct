@@ -54,14 +54,12 @@ test('call wrong action', 4, function() {
     });
 });
 
-test('call broken action', 4, function() {
+test('call broken action', 2, function() {
     stop();
     currentError = null;
     req('/mymodule/mycontroller/brokenaction', function(data, res) {
         notEqual(currentError, null, 'error is there');
         equal(currentError.message, 'I am broken', 'correct error message')
-        equal(currentError.type, 'NOT_FOUND', 'not found');
-        equal(res.statusCode, 404, 'got 404');
         start();
     });
 });
