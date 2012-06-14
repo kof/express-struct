@@ -1,1 +1,1 @@
-module.exports = require('./lib/mvc');
+module.exports = require('./lib/struct');
