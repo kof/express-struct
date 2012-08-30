@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/kof/express-struct.png)](http://travis-ci.org/kof/express-struct)
 ## MVC project structure on top of express.
 
 It defines a strict directories structure for you and maps automatically the routes.
