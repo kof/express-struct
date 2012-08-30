@@ -19,6 +19,9 @@
         "qunit": "0.5.x",
         "request": "2.9.x"
     },
+    "scripts": {
+        "test": "make test"
+    },
     "licenses": [
         {
             "type": "MIT",
