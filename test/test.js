@@ -2,12 +2,17 @@ var express = require('express'),
     http = require('http'),
     request = require('request');
 
-var opts = {
-        root: __dirname + '/fixtures',
-        port: 8888
-    },
+var opts,
     app,
     currentError;
+
+opts = {
+    root: __dirname + '/fixtures',
+    port: 8888,
+    error: function(err, req, res, next) {
+        currentError = err;
+    }
+};
 
 app = express.createServer();
 app.set('view engine', 'html');
