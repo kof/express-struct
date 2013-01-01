@@ -45,16 +45,23 @@ It defines a strict directories structure for you and maps automatically the rou
 ## Options
 
     {
-        // root directory where mvc is located
+
+        // Root directory where mvc is located.
         root: process.cwd(),
         route: '/:module?/:controller?/:action?(/*)?',
-        // convert paths after action into query
-        // /app/user/create/name/tj -> query = {name: 'tj'}
+
+        // Convert paths after action into query
+        // /app/user/create/name/kof -> query = {name: 'kof'}
         paramQuery: true,
-        // module name used if nothing else passed
+
+        // Module name used if nothing else passed.
         defaultModule: 'index',
-        // enabled modules list
-        moduleNames: null
+
+        // Enabled modules list.
+        moduleNames: null,
+
+        // Error handler.
+        error: function() {}
     }
 
 ## Routing
