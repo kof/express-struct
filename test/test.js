@@ -4,7 +4,8 @@ var express = require('express'),
 
 var opts,
     app,
-    currentError;
+    currentError,
+    server;
 
 opts = {
     root: __dirname + '/fixtures',
@@ -14,19 +15,19 @@ opts = {
     }
 };
 
-app = express.createServer();
+app = express();
 app.set('view engine', 'html');
-app.register('.html', require('jqtpl').express);
-app.listen(opts.port);
-app.error(function(err, req, res, next) {
+app.engine('html', require('jqtpl').__express);
+server = app.listen(opts.port);
+setup(app, opts);
+app.use(function(err, req, res, next) {
     currentError = err;
     res.send(err.code);
 });
 
-setup(app, opts);
 
 QUnit.done(function() {
-    app.close();
+    server.close();
 });
 
 function req(path, callback) {
@@ -81,30 +82,6 @@ test('default view', 1, function() {
     stop();
     req('/mymodule/mycontroller/getview', function(data) {
         equal(data, 'hello world', 'default view rendered');
-        start();
-    });
-});
-
-test('partial view', 1, function() {
-    stop();
-    req('/mymodule/mycontroller/partial', function(data) {
-        equal(data, 'I am partial', 'partial view rendered');
-        start();
-    });
-});
-
-test('view with partial view using ${partial()}', 1, function() {
-    stop();
-    req('/mymodule/mycontroller/viewwithpartial', function(data) {
-        equal(data, 'I am view - I am partial', 'view with partial inside, using express method');
-        start();
-    });
-});
-
-test('view with partial, using {{tmpl}}', 1, function() {
-    stop();
-    req('/mymodule/mycontroller/viewwithpartial', function(data) {
-        equal(data, 'I am view - I am partial', 'view with partial inside, using express method');
         start();
     });
 });

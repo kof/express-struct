@@ -1,21 +1,21 @@
  {
     "name": "express-struct",
     "description": "MVC project structure on top of express.",
-    "version": "0.3.2",
+    "version": "0.4.0",
     "author": "Oleg Slobodskoi <oleg008@gmail.com>",
     "repository": {
         "type": "git",
         "url": "http://github.com/kof/express-struct.git"
     },
     "keywords": [ "framework", "mvc", "express", "connect" ],
-    "engines": { "node": "0.6.x" },
+    "engines": { "node": "*" },
     "dependencies":  {
-        "underscore": "1.3.x",
-        "express": "2.x.x",
+        "underscore": "1.4.x",
+        "express": "3.x.x",
         "findit": "0.1.x"
     },
     "devDependencies": {
-        "jqtpl": "1.x.x",
+        "jqtpl": "2.x.x",
         "qunit": "0.5.x",
         "request": "2.9.x"
     },

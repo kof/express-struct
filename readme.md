@@ -29,10 +29,11 @@ It defines a strict directories structure for you and maps automatically the rou
     var struct = require('express-struct'),
         express = require('express');
 
-    var server = express.createServer();
+    var app = express();
 
-    struct.setup(server, options);
-    server.listen(8888);
+    struct.setup(app, options);
+
+    app.listen(8888);
 
     // /mvc/mymodule/controllers/mycontroller.js
     exports.myaction = function(req, res, next) {
